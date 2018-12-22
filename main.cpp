@@ -12,8 +12,11 @@ int main(void)
     std::cout << node.GetData();
     #endif
 
+    #if 0
+    SinglyLinkedListNode<std::string> node = SinglyLinkedListNode<std::string>("Test SinglyLinkedListNode");
+    std::cout << node.GetData();
+    #endif
 
-
-    std::cout <<"\n\n\nEnd of main()" << std::endl;
+    std::cout <<"\n\n\nEnd of main()\nPress any key to continue. . ." << std::endl;
     std::cin.get();
 }

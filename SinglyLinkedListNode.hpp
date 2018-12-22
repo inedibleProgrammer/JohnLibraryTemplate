@@ -8,7 +8,7 @@ class SinglyLinkedListNode : public Node<T>
 {
     public:
         SinglyLinkedListNode(T data)
-        : Node(data)
+        : Node<T>(data)
         {
             this->next = nullptr;
         }
