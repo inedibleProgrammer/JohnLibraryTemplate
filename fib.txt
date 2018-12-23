@@ -1,0 +1,49 @@
+#include <iostream>
+
+int Fib(int * fib, int end, int start)
+{
+    fib[start] = fib[start - 1] + fib[start - 2];
+    
+    if(start == end)
+    {
+        return fib[end];
+    }
+    else
+    {
+        return Fib(fib, end, start + 1);
+    }
+}
+
+
+int Fibonacci(int n)
+{
+    if(n == 0)
+    {
+        return 0;
+    }
+    else if(n == 1)
+    {
+        return 1;
+    }
+    else
+    {
+        int fib[n+1] = { 0 };
+        
+        fib[1] = 1;
+        
+        return Fib(fib, n, 2);
+    }
+}
+
+
+
+int main() 
+{
+    int x = 4;
+    
+    x = Fibonacci(4);
+    
+    std::cout << x;
+    
+    return 0;
+}

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-#include "SinglyLinkedListNode.hpp"
+#include "SinglyLinkedList.hpp"
 
 int main(void)
 {
@@ -15,6 +15,10 @@ int main(void)
     #if 0
     SinglyLinkedListNode<std::string> node = SinglyLinkedListNode<std::string>("Test SinglyLinkedListNode");
     std::cout << node.GetData();
+    #endif
+
+    #if 1
+    SinglyLinkedList<int> list = SinglyLinkedList<int>();
     #endif
 
     std::cout <<"\n\n\nEnd of main()\nPress any key to continue. . ." << std::endl;
